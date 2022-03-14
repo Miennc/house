@@ -496,7 +496,8 @@
   margin-bottom: 20px;
 }
 
-.content-4 .content-right .text-2, .content-4 .content-right .text-3 {
+.content-4 .content-right .text-2,
+.content-4 .content-right .text-3 {
   font-family: 'SVN-Avant Garde Gothic';
   font-style: normal;
   font-weight: 400;
@@ -744,7 +745,10 @@
 }
 
 .footer .form {
+  position: relative;
   background-image: url(/assets/imges/form.svg);
+  background-repeat: no-repeat;
+  padding-bottom: 150px;
   padding: 40px;
 }
 
