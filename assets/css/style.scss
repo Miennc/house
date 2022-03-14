@@ -1,18 +1,15 @@
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Unica One', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Unica One', cursive;
 }
 
 //reponsive
 @media (max-width: 768px) {
-    .banner {
-        .line {
-            display: none;
-        }
-    }
     .content-1-right {
         .position-img-bottom {
             .img-bottom {
@@ -28,16 +25,22 @@
     }
 }
 
-@media (max-width:567px) {
+@media (max-width: 567px) {
     .menu {
         .list {
             display: none !important;
-            ;
         }
     }
     .content-1 {
         .deco-3 {
             display: none !important;
+        }
+    }
+    .text-footer {
+        .line-deco-1,.line-deco-2,
+        .line-deco-3, .line-deco-4,
+        .line-deco-5 {
+            display:none;
         }
     }
 }
@@ -71,7 +74,7 @@
                 font-size: 14px;
                 letter-spacing: 2px;
                 text-transform: uppercase;
-                color: #FFFFFF;
+                color: #ffffff;
                 margin-left: 20px;
             }
         }
@@ -79,31 +82,24 @@
     .text-banner {
         margin-top: 200px;
         text-align: center;
-        h1 {
-            font-family: 'SVN-Rockness';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 78px;
-            line-height: 100%;
-            color: #FFFFFF;
-        }
+       
         .text-green {
-            font-family: 'SVN-Avant Garde Gothic';
+            font-family: "SVN-Avant Garde Gothic";
             font-style: normal;
             font-weight: 700;
             font-size: 44px;
             line-height: 130%;
             text-align: center;
-            color: #C4D82E;
+            color: #c4d82e;
         }
         .text-while {
-            font-family: 'SVN-Avant Garde Gothic';
+            font-family: "SVN-Avant Garde Gothic";
             font-style: normal;
             font-weight: 500;
             font-size: 38px;
             line-height: 130%;
             text-align: center;
-            color: #FFFFFF;
+            color: #ffffff;
         }
     }
     .text-footer {
@@ -113,29 +109,24 @@
         line-height: 120%;
         text-align: center;
         letter-spacing: 2px;
-        color: #FFFFFF;
-    }
-    .line {
-        .line {
-            width: 100%;
-            height: 3px;
+        color: #ffffff;
+        .line-deco-1{
+            border-bottom: 5px solid orange;
         }
-        .line-green {
-            background: #B5C71E;
+        .line-deco-2 {
+            border-bottom: 5px solid orangered;
         }
-        .line-blue {
-            background: #304FBF;
+        .line-deco-3 {
+            border-bottom: 5px solid green;
         }
-        .line-orange {
-            background: #E35C34;
+        .line-deco-4 {
+            border-bottom: 5px solid red;
         }
-        .line-black {
-            background: #26316B;
-        }
-        .line-gray {
-            background: #A07963;
+        .line-deco-5 {
+            border-bottom: 5px solid pink;
         }
     }
+
     .img-banner {
         overflow: hidden;
         display: flex;
@@ -147,7 +138,11 @@
         bottom: 0;
         left: 0;
         z-index: -1000;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/assets/imges/banner.jpg);
+        img {
+            object-fit: cover;
+            width: 100%;
+            min-height: 100%;
+        }
     }
     .deco {
         position: absolute;
@@ -167,24 +162,24 @@
     position: relative;
     .content-1-left {
         .p-1 {
-            font-family: 'SVN-Avant Garde Gothic';
+            font-family: "SVN-Avant Garde Gothic";
             font-style: normal;
             font-weight: 500;
             font-size: 40px;
             line-height: 52px;
-            color: #4F4F4F;
+            color: #4f4f4f;
         }
         .p-2 {
-            font-family: 'SVN-Avant Garde Gothic';
+            font-family: "SVN-Avant Garde Gothic";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 160%;
             text-align: justify;
-            color: #4F4F4F;
+            color: #4f4f4f;
         }
         .text-1 {
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -194,7 +189,7 @@
             color: #333333;
         }
         #number-1 {
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 400;
             font-size: 80px;
@@ -202,7 +197,7 @@
             color: #333333;
         }
         .text-2 {
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -252,7 +247,7 @@
             width: 100%;
             min-height: 100%;
         }
-        margin-left:-11px;
+        margin-left: -11px;
         margin-top: 10px;
     }
     .deco-3 {
@@ -283,7 +278,6 @@
         overflow: hidden;
         img {
             object-fit: cover;
-            width: 100%;
             min-height: 100%;
         }
     }
@@ -311,34 +305,34 @@
         top: 25%;
         left: 15%;
         p {
-            font-family: 'SVN-Avant Garde Gothic';
+            font-family: "SVN-Avant Garde Gothic";
             font-style: normal;
             font-weight: 500;
             font-size: 43px;
             line-height: 52px;
-            color: #FFFFFF;
+            color: #ffffff;
             position: absolute;
             top: -60%;
         }
         .box-1 {
             margin-right: 20px;
             .text-deco {
-                font-family: 'Nunito Sans';
+                font-family: "Nunito Sans";
                 font-style: normal;
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 19px;
-                color: #FFFFFF;
+                color: #ffffff;
             }
         }
         .box-2 {
             .text-deco {
-                font-family: 'Nunito Sans';
+                font-family: "Nunito Sans";
                 font-style: normal;
                 font-weight: 400;
                 font-size: 14px;
                 line-height: 19px;
-                color: #FFFFFF;
+                color: #ffffff;
             }
         }
     }
@@ -349,7 +343,7 @@
 .content-3 {
     position: relative;
     padding-top: 20px;
-    background: #F5F5F5;
+    background: #f5f5f5;
     .deco-8 {
         position: absolute;
         right: 0;
@@ -364,28 +358,23 @@
         }
     }
     p {
-        font-family: 'Nunito Sans';
+        font-family: "Nunito Sans";
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
         color: #333333;
     }
-    ul {
-        li {
-            list-style: url(/assets/imges/list-style.svg);
-            font-family: 'Nunito Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 19px;
-            color: #333333;
-        }
-    }
+  .address {
+      span {
+          margin-left: 3px;
+          margin-top: 6px;
+      }
+  }
 }
 
 // end content-3
-//content-4 
+//content-4
 .content-4 {
     position: relative;
     .content-left {
@@ -411,23 +400,23 @@
         text-align: center;
         position: relative;
         h1 {
-            font-family: 'SVN-Avant Garde Gothic';
+            font-family: "SVN-Avant Garde Gothic";
             font-style: normal;
             font-weight: 500;
             font-size: 40px;
             line-height: 52px;
-            color: #4F4F4F;
+            color: #4f4f4f;
             margin-bottom: 20px;
         }
         .text-2,
         .text-3 {
-            font-family: 'SVN-Avant Garde Gothic';
+            font-family: "SVN-Avant Garde Gothic";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
             line-height: 160%;
             text-align: justify;
-            color: #4F4F4F;
+            color: #4f4f4f;
             margin-top: 50px;
         }
         .img {
@@ -474,40 +463,40 @@
 // content -5
 .content-5 {
     margin-top: 200px;
-    background: #EA5A30;
+    background: #ea5a30;
     padding: 40px;
     position: relative;
     .box-1 {
         h5 {
             /* T1 */
-            font-family: 'SVN-Avant Garde Gothic';
+            font-family: "SVN-Avant Garde Gothic";
             font-style: normal;
             font-weight: 500;
             font-size: 40px;
             line-height: 52px;
-            color: #FFFFFF;
+            color: #ffffff;
         }
         span {
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 500;
             font-size: 18px;
             line-height: 160%;
             text-transform: uppercase;
-            color: #FFFFFF;
+            color: #ffffff;
         }
     }
     .box-2 {
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
         opacity: 0.2;
     }
     hr {
-        background-color: #FFFFFF;
+        background-color: #ffffff;
     }
     .img {
         overflow: hidden;
@@ -558,16 +547,16 @@
             min-height: 100%;
         }
         h6 {
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 600;
             font-size: 17px;
             line-height: 24px;
-            color: #4F4F4F;
+            color: #4f4f4f;
             margin-top: 10px;
         }
         p {
-            font-family: 'Montserrat';
+            font-family: "Montserrat";
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
@@ -578,22 +567,28 @@
 }
 
 //end content-6
-// footer 
+// footer
 .footer {
     position: relative;
-    padding-top: 20px;
-    background-image: url(/assets/imges/bg-footer.svg);
-    padding: 10px;
+    padding-top:20px;
     .img {
         overflow: hidden;
         img {
             object-fit: cover;
-            width: 100%;
             min-height: 100%;
         }
     }
-    h5 {
+    p {
         font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 160%;
+        color: #FFFFFF;
+        
+    }
+    h5 {
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
@@ -601,46 +596,34 @@
         /* identical to box height */
         text-transform: uppercase;
         /* 1 */
-        color: #FFFFFF;
-    }
-    p {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 160%;
-        /* identical to box height, or 24px */
-        display: flex;
-        align-items: center;
-        color: #FFFFFF !important;
+        color: #ffffff;
     }
     hr {
         border: 1px dotted black;
     }
     h6 {
-        font-family: 'Montserrat';
+        font-family: "Montserrat";
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
         /* identical to box height */
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #ffffff;
     }
     button {
         background: rgba(255, 255, 255, 0.15);
         border: none;
         padding: 4px;
-        color: #FFFFFF;
+        color: #ffffff;
     }
     .form {
         position: relative;
-        background-image: url(/assets/imges/form.svg);
         background-repeat: no-repeat;
         padding-bottom: 150px;
         padding: 40px;
         h4 {
-            font-family: 'SVN-Avant Garde Gothic';
+            font-family: "SVN-Avant Garde Gothic";
             font-style: normal;
             font-weight: 600;
             font-size: 20px;
@@ -658,25 +641,64 @@
                 outline: none;
             }
         }
+        .input-form {
+            width: 230px;
+        }
+        .img-form {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            padding-right: 30px;
+            img {
+                object-fit: cover;
+                min-height: 100%;
+            }
+        }
+        button {
+            width: 94px;
+            height: 38px;
+            background: #ea5a30;
+            &:focus {
+                outline: none;
+            }
+            margin-top: 10px;
+        }
+       .text-1 {
+            font-family: "Inter";
+            font-style: italic;
+            font-weight: 400;
+            font-size: 11px;
+            line-height: 140%;
+            color: #828282;
+        }
+
+        .text-2 {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 140%;
+            color: #333333;
+            margin-top: 5px;
+        }
     }
-    p {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 140%;
-        /* identical to box height, or 20px */
-        display: flex;
-        align-items: center;
-        /* Gray 1 */
-        color: #333333;
-    }
-    button {
-        width: 94px;
-        height: 38px;
-        background: #EA5A30;
-        &:focus {
-            outline: none;
+
+    .bg-footer {
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1000;
+        img {
+            object-fit: cover;
+            width: 100%;
+            min-height: 100%;
         }
     }
 }
